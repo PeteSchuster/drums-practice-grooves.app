@@ -1,5 +1,5 @@
 // TODO: Replace these placeholder URLs with your real social links before deploying
-const DISCORD_URL = 'https://discord.gg/8G8dWxGt'
+const DISCORD_URL = 'https://discord.gg/vCYgWtYgce'
 // const INSTAGRAM_URL = 'https://instagram.com/YOUR_HANDLE'
 // const TIKTOK_URL = 'https://tiktok.com/@YOUR_HANDLE'
 

@@ -19,7 +19,7 @@ export default function Hero() {
         {/* App icon */}
         <div className="flex justify-center mb-8">
           <img
-            src="/app-icon.png"
+            src="/app-icon-256.png"
             alt="Drums: Practice Grooves app icon"
             className="w-24 h-24 rounded-2xl shadow-2xl"
             onError={(e) => {
@@ -48,8 +48,8 @@ export default function Hero() {
 
         <p className="text-lg sm:text-xl text-muted mb-10 max-w-xl mx-auto leading-relaxed">
           Build your practice, one groove at a time. Browse curated drum grooves,
-          build your personal practice list, and play along with visual notation
-          and real audio playback.
+          build a practice list, then run the whole session — with visual notation,
+          real audio playback and a built-in speed trainer.
         </p>
 
         {/* App Store CTA */}

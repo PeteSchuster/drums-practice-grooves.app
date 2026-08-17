@@ -5,8 +5,20 @@ function formatDate(dateStr) {
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
+// Sort by version, not date: a build can sit in review for days, so release
+// dates don't always run in the same order as the versions themselves.
+function compareVersions(a, b) {
+  const pa = a.split('.').map(Number)
+  const pb = b.split('.').map(Number)
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+    const diff = (pb[i] || 0) - (pa[i] || 0)
+    if (diff !== 0) return diff
+  }
+  return 0
+}
+
 export default function Updates() {
-  const sorted = [...updates].sort((a, b) => new Date(b.date) - new Date(a.date))
+  const sorted = [...updates].sort((a, b) => compareVersions(a.version, b.version))
 
   return (
     <section className="py-24 px-6" style={{ background: '#0d0d0d' }}>

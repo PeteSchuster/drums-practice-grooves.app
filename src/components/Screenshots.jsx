@@ -14,6 +14,11 @@ const screenshots = [
     caption: 'Visual Notation Playback',
     description: 'Follow along with real-time animated drum notation',
   },
+  {
+    src: '/screenshots/note-highway.png',
+    caption: 'The Note Highway',
+    description: 'Watch every note travel toward the hit line before it lands',
+  },
 ]
 
 function PhoneFrame({ src, caption, description }) {
@@ -23,16 +28,7 @@ function PhoneFrame({ src, caption, description }) {
         className="iphone-frame"
         style={{ width: '220px', height: '476px' }}
       >
-        {/* Notch */}
-        <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 z-10"
-          style={{
-            width: '100px',
-            height: '28px',
-            background: '#111',
-            borderRadius: '0 0 18px 18px',
-          }}
-        />
+        {/* The notch is drawn by .iphone-frame::before in index.css */}
         {/* Screen content */}
         <div className="w-full h-full bg-black flex items-center justify-center overflow-hidden">
           <img
@@ -86,8 +82,8 @@ export default function Screenshots() {
           </p>
         </div>
 
-        {/* Desktop: side by side */}
-        <div className="hidden md:flex items-start justify-center gap-8 lg:gap-12">
+        {/* Desktop: side by side, wrapping to 2x2 when four frames won't fit */}
+        <div className="hidden md:flex flex-wrap items-start justify-center gap-10">
           {screenshots.map((s) => (
             <PhoneFrame key={s.src} {...s} />
           ))}

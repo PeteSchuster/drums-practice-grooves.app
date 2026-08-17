@@ -1,5 +1,48 @@
 [
   {
+    "version": "1.2.0",
+    "date": "2026-08-08",
+    "notes": [
+      "Play All — run your whole practice list as one session, moving on by repeats or by the clock",
+      "Speed Trainer — nudge the tempo up automatically every few passes",
+      "New Note Highway view: notes travel down a lane for each drum toward a hit line",
+      "Tempo, loop and BPM controls moved onto the transport bar, where you actually reach for them",
+      "Every groove now remembers the tempo you practise it at",
+      "Two new grooves: 6/8 Rock Ballad and Jazz Ride",
+      "Non-4/4 grooves get proper beat grouping, beaming and rests",
+      "Bigger tap targets for mute and solo, and typed number entry throughout"
+    ]
+  },
+  {
+    "version": "1.1.3",
+    "date": "2026-08-07",
+    "notes": [
+      "Correctness and stability fixes from a full code review pass"
+    ]
+  },
+  {
+    "version": "1.1.2",
+    "date": "2026-05-07",
+    "notes": [
+      "Playback now pauses when the app goes to the background",
+      "Handles headphone unplugs, phone calls and other audio interruptions cleanly",
+      "Metronome clicks release properly instead of ringing out",
+      "Practice list saves in the background, so the app stays smooth while you use it",
+      "Guards against invalid tempos"
+    ]
+  },
+  {
+    "version": "1.1",
+    "date": "2026-03-19",
+    "notes": [
+      "Mute and solo individual drums while you play along",
+      "Practice status tracking — mark grooves as in progress or practised",
+      "Notation now uses proper beaming",
+      "Expanded the groove pool",
+      "Added a tip jar for anyone who wants to support the app"
+    ]
+  },
+  {
     "version": "1.0.0",
     "date": "2026-03-21",
     "notes": [

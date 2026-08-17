@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start gap-3">
             <div className="flex items-center gap-3">
               <img
-                src="/app-icon.png"
+                src="/app-icon-256.png"
                 alt="App icon"
                 className="w-9 h-9 rounded-xl"
                 onError={(e) => { e.target.style.display = 'none' }}

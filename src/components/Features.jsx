@@ -8,7 +8,7 @@ const features = [
       </svg>
     ),
     title: 'Groove Library',
-    description: 'Browse a curated collection of drum grooves organized by genre — Funk, Rock, Punk, and more.',
+    description: '24 curated grooves across rock, funk, punk and jazz — from basic beats to ghost-note workouts and snare fills.',
   },
   {
     icon: (
@@ -18,16 +18,40 @@ const features = [
       </svg>
     ),
     title: 'Practice List',
-    description: 'Curate your own practice session by adding the grooves you want to focus on today.',
+    description: 'Build a focused session from the grooves you want to work on, and track what you have already practised.',
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="28" height="28">
-        <polygon points="5 3 19 12 5 21 5 3"/>
+        <circle cx="12" cy="12" r="10"/>
+        <polygon points="10 8 16 12 10 16 10 8"/>
       </svg>
     ),
-    title: 'Visual Playback',
-    description: 'Follow along with animated drum notation that highlights each note as it plays in real time.',
+    title: 'Play All',
+    description: 'Run your whole list end to end as one session — move on after a set number of repeats, or after a set number of minutes.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="28" height="28">
+        <path d="M3 18a9 9 0 0118 0"/>
+        <line x1="12" y1="18" x2="17" y2="11"/>
+        <circle cx="12" cy="18" r="1.5"/>
+      </svg>
+    ),
+    title: 'Speed Trainer',
+    description: 'Play a groove a few times, let the app nudge the tempo up, repeat — how a drummer actually uses a metronome.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="28" height="28">
+        <rect x="3" y="4" width="18" height="7" rx="1.5"/>
+        <path d="M6 20l4-6"/>
+        <path d="M18 20l-4-6"/>
+        <line x1="9" y1="20" x2="15" y2="20"/>
+      </svg>
+    ),
+    title: 'Three Ways to Follow',
+    description: 'Read it as a step grid, as real drum notation, or as a scrolling note highway that shows what is coming next.',
   },
   {
     icon: (
@@ -38,18 +62,20 @@ const features = [
         <path d="M3 7a9 3 0 0018 0"/>
       </svg>
     ),
-    title: 'Multiple Drum Kits',
-    description: 'Choose from several built-in drum kits to hear playback that matches your style and sound.',
+    title: 'Six Drum Kits',
+    description: 'Standard, Room, Power, Electronic, Jazz and Brush — pick the kit that matches what you are playing.',
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="28" height="28">
-        <line x1="12" y1="5" x2="12" y2="19"/>
-        <polyline points="19 12 12 5 5 12"/>
+        <polyline points="17 1 21 5 17 9"/>
+        <path d="M3 11V9a4 4 0 014-4h14"/>
+        <polyline points="7 23 3 19 7 15"/>
+        <path d="M21 13v2a4 4 0 01-4 4H3"/>
       </svg>
     ),
-    title: 'Tempo Control',
-    description: 'Dial in exactly the BPM you need to practice slowly and build up speed with confidence.',
+    title: 'Working Tempo & Loop',
+    description: 'Every groove remembers the BPM you practise it at, with tempo and loop controls right on the transport bar.',
   },
   {
     icon: (
@@ -63,6 +89,17 @@ const features = [
     ),
     title: 'Count-in & Metronome',
     description: 'Stay in the pocket with a built-in count-in and metronome to keep your timing tight.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="28" height="28">
+        <path d="M8 4v10.5a2.5 2.5 0 11-2-2.45"/>
+        <path d="M16 9.5V20a2.5 2.5 0 11-2-2.45"/>
+        <line x1="8" y1="7" x2="16" y2="12.5"/>
+      </svg>
+    ),
+    title: 'Any Time Signature',
+    description: '4/4, 6/8 and 12/8 grooves are all first-class, with beat grouping and beaming that follow the meter.',
   },
 ]
 
